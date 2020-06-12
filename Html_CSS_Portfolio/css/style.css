@@ -1,0 +1,293 @@
+body{
+    background-color: thistle;
+          font-family: "Sofia";
+        font-size: 22px;
+      
+}
+
+
+nav{
+    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+    background-color: black;
+    
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    
+    
+}
+
+nav a{
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 34px 34px;
+    
+    
+}
+
+/*mouse in navbar */
+a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/*responsive navbar*/
+@media screen and (max-width: 992px) {
+    nav a {
+        font-size: small;
+      }   
+}
+
+
+
+
+
+/* --------------------------About style flexbow------------------------*/
+.anim{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding :140px;
+}
+
+@media screen and (max-width: 992px) {
+    .anim{display: none;}
+}
+
+/*flexBox*/
+/*About style*/
+.centerDiv{
+display: flex;
+justify-content: center;
+padding-top: 2%;
+}
+
+.borderTab{
+   
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+    .centerDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    #About{
+        padding: auto;
+        margin: auto;
+    }
+    .centerDiv>div>img {
+        width: 100%;
+        margin-top: 120px;
+    }
+    .borderTab{
+   
+        padding: 10px;
+        width: 100%;
+        height:100%;
+        text-align: center;
+    }
+}
+
+/*--------------Skill with flexBox-----------*/
+.Skill{
+  display: flex;
+  height: 200px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 40px;
+
+}
+#Skill{
+    padding-top: 15px;
+}
+#Skill>h1{
+    
+    color: honeydew;
+    text-align: center;
+    padding: 40px;
+}
+.Skill>div{
+
+    margin: auto;
+    text-align: center;    
+}
+
+.Skill>div>img{
+    max-width: 220px;
+    vertical-align: middle;
+    padding: auto;
+}
+
+
+.Skill>div>p{
+    color: honeydew;
+}
+
+div{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .Skill{
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    .Skill>div{
+        font-size: small;
+ 
+
+    }
+    .Skill>div>img{
+        width: 30%;
+    }
+}
+
+/* Work with Flex fbox */
+#Work{
+    padding-top: 45px;
+}
+.Work{
+    padding: 2%;
+    display: flex;
+    margin-top: 50px;
+  
+
+}
+
+.Work>div{
+    
+    
+    margin: 10px;
+    text-align: center;
+    
+    
+}
+
+#Work{
+    
+    margin: 4%;
+}
+#Work>h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .Work{
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+/*-------------------------Contact with CSS Grid------*/
+
+
+  
+  
+  #Contact{
+      background-color: black;
+      margin-top: 20px;
+      padding-right: 20%;
+      padding-left: 20%;
+      padding-bottom: 60px;
+  }
+
+  #contactText{
+      text-align: center;
+      color: white;
+  }
+
+  /* Form styling */
+  .myForm {
+    display: grid;
+    
+    grid-gap: 10px;
+    background: #444;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+    padding: 14px;
+    
+  }
+
+    .myForm>label{
+        padding: 20px 0;
+        font-size: 30px;
+        grid-column: 1 / 3;
+    }
+
+    .myForm>input{
+        padding: 20px 0;
+        font-size: 30px;
+        grid-column: 3 / 7;
+        border-radius: 7px;
+    }
+
+    
+
+    .myForm>textarea{
+
+        grid-column: 3/7;
+        border-radius: 7px;
+    }
+    .myForm>button{
+        grid-column: 1/7;
+        padding: 20px;
+        border-radius: 7px;
+    }
+    
+
+    .myForm>button:hover {
+        background-color: aquamarine;
+        color: white;
+      }{}
+    #fontARIAL{
+        font: 20px Arial, sans-serif;
+        
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+        
+        .myForm{
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+        }
+    }
+
+    /*----------------------style footer--------*/
+    footer{
+      
+        background-color: gray;
+        padding: 10px;
+        text-align: center;
+
+    }
